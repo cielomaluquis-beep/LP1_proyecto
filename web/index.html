@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: #ff7b00;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff5500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Bienvenido!</h1>
+        <p>Nos alegra tenerte aquí 🚀</p>
+        <button onclick="mostrarMensaje()">Comenzar</button>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Gracias por visitar esta página!");
+        }
+    </script>
+
+</body>
+</html>
