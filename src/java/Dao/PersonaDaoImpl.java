@@ -36,6 +36,7 @@ public class PersonaDaoImpl implements IPersona{
             query = "INSERT INTO persona(nombre,email,telefono,direccion)" + 
                     "VALUES (?,?,?,?)";
             cn = ConexionSingleton.getConnection();
+           
             st=cn.prepareStatement(query,Statement.RETURN_GENERATED_KEYS);
             st.setString(1, p.getNombre());
             st.setString(2, p.getEmail());
